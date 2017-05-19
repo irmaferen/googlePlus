@@ -8,8 +8,8 @@ class Profile implements Comparable <Profile>{
     }
 
     public Profile(String nama, String email){
-        setNama(nama);
-        setEmail(email);
+        this.nama = nama;
+        this.email = email;
     }
 
     public void setNama(String nama) {
