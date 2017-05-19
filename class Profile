@@ -28,7 +28,7 @@ class Profile implements Comparable <Profile>{
         return email;
     }
     @Override
-    public int compareTo(Profile p) {
+    public int compareTo(Profile i) {
         return 1;
     }
 }
