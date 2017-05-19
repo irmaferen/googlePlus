@@ -1,31 +1,31 @@
-public class Circle{
+public class Circle implements Comparable<Cirle>{
 
     private Profile profile,profile2,profile3,profile4,profile5;
 
     public Circle(Profile profile,Profile profile2){
-        setProfile(profile);
-        setProfile2(profile2);
+        this.profile = profile;
+        this.profile2 = profile2;
     }
 
     public Circle(Profile profile,Profile profile2, Profile profile3){
-        setProfile(profile);
-        setProfile2(profile2);
-        setProfile3(profile3);
+        this.profile = profile;
+        this.profile2 = profile2;
+        this.profile3 = profile3;
     }
 
     public Circle(Profile profile,Profile profile2, Profile profile3, Profile profile4){
-        setProfile(profile);
-        setProfile2(profile2);
-        setProfile3(profile3);
-        setProfile4(profile4);
+        this.profile = profile;
+        this.profile2 = profile2;
+        this.profile3 = profile3;
+        this.profile4 = profile4;
     }
 
     public Circle(Profile profile,Profile profile2, Profile profile3, Profile profile4, Profile profile5){
-        setProfile(profile);
-        setProfile2(profile2);
-        setProfile3(profile3);
-        setProfile4(profile4);
-        setProfile5(profile5);
+        this.profile = profile;
+        this.profile2 = profile2;
+        this.profile3 = profile3;
+        this.profile4 = profile4;
+        this.profile5 = profile5;
     }
 
     public void setProfile(Profile profile){
@@ -66,5 +66,10 @@ public class Circle{
 
     public Profile getProfile5(){
         return profile5;
+    }
+    
+    @Override
+    public int compareTo(Circle c){
+        return 0;
     }
 }
